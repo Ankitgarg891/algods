@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E1EAA672070089300B7BF81"
-               BuildableName = "vector"
-               BlueprintName = "vector"
-               ReferencedContainer = "container:vector.xcodeproj">
+               BlueprintIdentifier = "3E87C1E32072740B0092DB13"
+               BuildableName = "vector_initialize_print"
+               BlueprintName = "vector_initialize_print"
+               ReferencedContainer = "container:vector_initialize_print.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E1EAA672070089300B7BF81"
-            BuildableName = "vector"
-            BlueprintName = "vector"
-            ReferencedContainer = "container:vector.xcodeproj">
+            BlueprintIdentifier = "3E87C1E32072740B0092DB13"
+            BuildableName = "vector_initialize_print"
+            BlueprintName = "vector_initialize_print"
+            ReferencedContainer = "container:vector_initialize_print.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E1EAA672070089300B7BF81"
-            BuildableName = "vector"
-            BlueprintName = "vector"
-            ReferencedContainer = "container:vector.xcodeproj">
+            BlueprintIdentifier = "3E87C1E32072740B0092DB13"
+            BuildableName = "vector_initialize_print"
+            BlueprintName = "vector_initialize_print"
+            ReferencedContainer = "container:vector_initialize_print.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E1EAA672070089300B7BF81"
-            BuildableName = "vector"
-            BlueprintName = "vector"
-            ReferencedContainer = "container:vector.xcodeproj">
+            BlueprintIdentifier = "3E87C1E32072740B0092DB13"
+            BuildableName = "vector_initialize_print"
+            BlueprintName = "vector_initialize_print"
+            ReferencedContainer = "container:vector_initialize_print.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
