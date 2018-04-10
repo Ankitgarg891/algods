@@ -70,7 +70,7 @@ int partition(int arr[],int start,int end)  //partition by both pointer at start
 int random_partition(int arr[],int start,int end)
 {
     int random=rand()%(end-start)+start;
-    
+     
     int temp=arr[random];
     arr[random]=arr[end];
     arr[end]=temp;
