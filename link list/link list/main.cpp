@@ -135,17 +135,12 @@ void print_reverse(node * head)
 {
     if (head==NULL)
     {
-        cout<<"List is empty";
+        return;
     }
     else{
         
     node* ptr=head;
-    if (ptr->next==NULL)
-    {
-        cout<<ptr->data<<"  ";
-        return;
     
-    }
     print_reverse(ptr->next);
     cout<<ptr->data<<"  ";
     }
