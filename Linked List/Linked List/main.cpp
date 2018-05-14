@@ -10,10 +10,10 @@
 using namespace std;
 
 struct node{
-
+    
     int data;
     node* next;
-
+    
 };
 
 
@@ -47,11 +47,11 @@ void insert_back(node* &head,int n1)
         
         
     }
-
     
     
     
-
+    
+    
 }
 
 void insert_front(node* &head,int data)
@@ -69,8 +69,8 @@ void insert_nth(node* &head,int data,int pos)
     
     if (pos==0)
     {
-    temp->next=head;
-    head=temp;
+        temp->next=head;
+        head=temp;
     }
     else
     {
@@ -79,31 +79,32 @@ void insert_nth(node* &head,int data,int pos)
         for (int i=0;i<pos-1;i++)
         {
             if (ptr->next==NULL)
-                {
-                    flag=1;
-                    break;
-                    
-                }
+            {
+                flag=1;
+                break;
+                
+            }
             
             ptr=ptr->next;
         }
-        
+        //(ptr-1)->next=temp;
+        //temp->next=ptr;
         if (flag==0)
         {
-        
-        temp->next=ptr->next;
-        ptr->next=temp;
+            
+            temp->next=ptr->next;
+            ptr->next=temp;
         }
         else
         {
             cout<<"Postion out of index";
         }
         
-
-
+        
+        
     }
-
-
+    
+    
 }
 
 
@@ -138,64 +139,44 @@ void print_reverse(node * head)
     }
     else{
         
-    node* ptr=head;
-    
-    print_reverse(ptr->next);
-    cout<<ptr->data<<"  ";
+        node* ptr=head;
+        
+        print_reverse(ptr->next);
+        cout<<ptr->data<<"  ";
     }
-
+    
 }
 
 void delete_nth(node * &head, int pos)
 {
     node* ptr=head;
-    if (pos==0 || ptr==NULL)
-    {
-        if (ptr->next!=NULL)
-        {
+    if (pos==0 || ptr==NULL){
+        if ( ptr!=NULL){
             head=ptr->next;
-            delete ptr;
-
-        }
-        else
-        {
-            if(ptr!=NULL)
-            {
-                delete ptr;
-            }
-            head=NULL;
-            
-        
-        }
-
+            delete ptr;}
     }
     
-    else
-    {
+    
+    
+    
+    
+    else{
         int ctr=0;
         int flag=0;
-        while (ctr!=pos-1)
-        {
+        while (ctr!=pos-1){
             ctr++;
-            if(ptr->next!=NULL)
-            {
+            if(ptr->next!=NULL){
                 ptr=ptr->next;
             }
-            
-            else
-            {
+            else{
                 flag=1;
                 break;
             }
-            
-            
         }
         
-        if (flag==1)
-        {
+        if (flag==1){
             cout<<"Index out of list";
-            
-        }
+            }
         else
         {
             if ((ptr->next) -> next != NULL)
@@ -213,15 +194,15 @@ void delete_nth(node * &head, int pos)
                 ptr->next=NULL;
                 
             }
-        
+            
         }
-    
-    
-    
+        
+        
+        
     }
-
-
-
+    
+    
+    
 }
 
 
@@ -235,7 +216,7 @@ int main(int argc, const char * argv[]) {
     
     while (cho!=0)
     {
-       
+        
         cout<<"\n\nMenu:";
         cout<<"\n0 - Exit";
         cout<<"\n1 - Printing Linked List";
@@ -245,8 +226,8 @@ int main(int argc, const char * argv[]) {
         cout<<"\n5 - Delete a node at nth position";
         cout<<"\n6 - Reverse Printing Linked List";
         
-
-
+        
+        
         
         cout<<"\n\nEnter your choice: ";
         cin>>cho;
@@ -278,7 +259,7 @@ int main(int argc, const char * argv[]) {
             cout<<"\nEnter position:";
             cin>>pos;
             insert_nth(head, data, pos);
-        
+            
         }
         
         else if (cho==5)
@@ -286,7 +267,7 @@ int main(int argc, const char * argv[]) {
             cout<<"\nEnter position:";
             cin>>pos;
             delete_nth(head,pos);
-        
+            
             
         }
         
@@ -294,11 +275,11 @@ int main(int argc, const char * argv[]) {
         {
             print_reverse(head);
         }
-    
-    
+        
+        
     }
     
-  
+    
     
     
     
