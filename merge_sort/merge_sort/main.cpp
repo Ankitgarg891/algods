@@ -106,15 +106,16 @@ void merge_sort(int arr[],int start,int end,int count)
 
 int main() {
     // insert code here...
-    cout << "Hello, World!\n";
-    int arr[]={5,4,3,2,1,6};
-    int n=6;
+    //cout << "Hello, World!\n";
+    int arr[]={3,6};
+    int n=2;
     int rec=0;
     merge_sort(arr,0, n-1,rec);
     cout<<"\nFinal array is:";
-    for (int i=0;i<5;i++)
+    
+    for (int i=0;i<n;i++)
     {
         cout<<arr[i]<<"    ";
     }
-    return 0;
+   
 }

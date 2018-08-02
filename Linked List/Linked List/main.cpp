@@ -119,12 +119,11 @@ void print_ll(node* &head)
     else
     {
         node* ptr=head;
-        while (ptr->next!=NULL)
+        while (ptr!=NULL)
         {
             cout<<ptr->data<<"  ";
             ptr=ptr->next;
         }
-        cout<<ptr->data<<"  ";
         
     }
     
