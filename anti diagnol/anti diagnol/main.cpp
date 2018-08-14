@@ -30,7 +30,7 @@ vector<vector<int> > diagonal(vector<vector<int> > &A) {
         }
         ctr++;
     }
-    
+
     for (int i=1;i<n;i++)
     {
         int k=i;
