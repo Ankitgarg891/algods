@@ -133,7 +133,7 @@ int main()
     cin>>n>>r_data;
     
     node* root=new node;
-    root->data=r_data;
+    (*root).data=r_data;
     root->left=NULL;
     root->right=NULL;
     
