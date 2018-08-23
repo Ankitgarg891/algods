@@ -11,7 +11,10 @@
 
 #include<iostream>
 #include<string>
+
+#include <queue>
 using namespace std;
+
 
 struct node {
     int data;
@@ -124,6 +127,26 @@ void inorder(node *ptr)
 }
 
 
+void level_traversal(node* ptr)
+{
+    queue<node*> q;
+    q.push(ptr);
+    while (q.empty()==false) {
+        
+        if (q.front()->left!=NULL)
+        {
+        q.push(q.front()->left);
+        }
+        if (q.front()->right!=NULL)
+        {
+        q.push(q.front()->right);
+        }
+        cout<<q.front()->data<<"---";
+        q.pop();
+    }
+}
+
+
 
 
 int main()
@@ -152,6 +175,8 @@ int main()
     
     int dia=0;
     diameter(root,dia);
-    cout<<dia;
+    cout<<"Diameter:"<<dia;
+    cout<<"\nLevel Order:";
+    level_traversal(root);
     return 0;
 }

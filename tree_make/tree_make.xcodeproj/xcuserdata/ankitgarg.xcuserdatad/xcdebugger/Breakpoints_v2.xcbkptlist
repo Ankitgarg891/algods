@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tree_make/main.cpp"
-            timestampString = "555972907.564694"
+            timestampString = "556541546.300477"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "height (node * ptr)"
             landmarkType = "9">
          </BreakpointContent>
