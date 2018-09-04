@@ -69,19 +69,13 @@ int partition(int arr[],int start,int end)  //partition by both pointer at start
 
 int random_partition(int arr[],int start,int end)
 {
-    int random=rand()%(end-start)+start;
+    int random=rand()%(end-start+1)+start;
      
     int temp=arr[random];
     arr[random]=arr[end];
     arr[end]=temp;
     
     return partition1(arr, start, end);
-    
-    
-    
-    
-
-
 }
 
 
@@ -89,25 +83,20 @@ int random_partition(int arr[],int start,int end)
 void quicksort(int arr[],int start,int end)
 
 {
-    if (start<end)
-    {
+    if (start>=end)
+    {return;}
+    
         int part=random_partition(arr,start,end);
-        
-        
-
         quicksort(arr, start, part-1);
         quicksort(arr, part+1, end);
-        
-        
-
     
-    }
     
 }
 
+
 int main(int argc, const char * argv[]) {
     
-    int arr[]={7,2,1,6,8,5,3,4,67,90909,0};
+    int arr[]={7,2,1,6,8,5,32,4,67,91,10};
     int size=11;
     quicksort(arr,0,size-1);
     
