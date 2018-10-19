@@ -27,7 +27,7 @@ int main() {
 	    {
 	        for (int j=i+i;j<max+1;j=j+i)
 	        {
-	            v2[j]=0;
+	            v2[j]=0;  // 0 is marked and not prime                                                   
 	            
 	        }
 	    }
