@@ -43,7 +43,7 @@ int main()
 
 	}
 
-	cout<<ans<<endl;
+	cout<<l1<<"l2:"<<l2<<ans<<endl;
 
 
 	return 0;
