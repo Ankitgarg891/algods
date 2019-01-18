@@ -39,14 +39,8 @@ int main(int argc, const char * argv[]) {
     
     vector<int> B={-6,1,1,12,11,2,-10};
     cout<<maxSubArray(B);
-    
     //int arr[]={1,3,4,5};
     //cout<<"   \n"<<*max_element(arr,arr+4);
-    
-    
-   
-    
     cout << "\n";
-    
     return 0;
 }
